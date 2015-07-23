@@ -23,10 +23,13 @@ Mouse = {
       
     _mouse.on( 'move', function( x, y ) {
       Mouse.emit( 'x', x / Mouse.res[0] )
-      Mouse.emit( 'y', y / Mouse.res[1] )
-      
-      // console.log( "MOVE", x / Mouse.res[0], y / Mouse.res[1] )
+      Mouse.emit( 'y', y / Mouse.res[1] )          
     })
+    
+    _mouse.on( 'left-down', function() { Mouse.emit( 'leftButton', 1 ) })
+    _mouse.on( 'left-up', function() { Mouse.emit( 'leftButton', 0 ) })
+    _mouse.on( 'right-down', function() { Mouse.emit( 'rightButton', 1 ) })
+    _mouse.on( 'right-up', function() { Mouse.emit( 'rightButton', 0 ) })        
   }
 }
 Mouse.__proto__ = new EventEmitter()
