@@ -1,6 +1,6 @@
 {
   "name": "interface.server.mouse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Mouse input for Interface.Server",
   "main": "Mouse.js",
   "scripts": {
