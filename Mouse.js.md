@@ -28,7 +28,7 @@ presses. Currently OS X only due to screenres dependency.
             
         this.emit( 'new device', 'mouse', Mouse )
           
-        mouse.on( 'move', function( x, y ) {
+        _mouse.on( 'move', function( x, y ) {
           Mouse.emit( 'x', x / Mouse.res[0] )
           Mouse.emit( 'y', y / Mouse.res[1] )
           
