@@ -1,0 +1,27 @@
+{
+  "name": "interface.server.mouse",
+  "version": "0.0.1",
+  "description": "Mouse input for Interface.Server",
+  "main": "Mouse.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "interface.server"
+  ],
+  "author": "Charlie Roberts <charlie@charlie-roberts.com> (http://www.charlie-roberts.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "osx-mouse": "^1.1.1",
+    "screenres": "^1.0.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charlieroberts/interface.server.mouse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charlieroberts/interface.server.mouse/issues"
+  }
+}
